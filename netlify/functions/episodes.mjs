@@ -58,7 +58,7 @@ export default async (req) => {
         createdAt: new Date().toISOString()
       };
 
-      await store.set(`episode/${item.id}`, item);
+      await store.setJSON(`episode/${item.id}`, item);
       return json(item, 201);
     }
 
