@@ -21,6 +21,8 @@ function widget(resourceType,done){
     multiple:false,
     resourceType,
     clientAllowedFormats:resourceType==="video"?["mp4","webm","mov","m4v"]:["jpg","jpeg","png","webp"],
+    maxVideoFileSize:2147483648,
+maxChunkSize:20000000,
     folder:"streambox",
     showAdvancedOptions:false,
     cropping:false,
